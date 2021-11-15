@@ -1,0 +1,29 @@
+.box {
+    border: calc(var(--radius) / 2);
+    border-radius: 5px;
+    background-image: url("wave.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-style: groove;
+    padding: 1.25rem;
+    margin: 3vh 3vw;
+}
+
+.box.main {
+    margin: 4vh 1vw;
+}
+
+@media only screen and (max-width: 600px) {
+    .box {
+        padding: 1.0rem;
+        margin: 4vh 4vw;
+      transition: 300ms all ease-in-out;
+    }
+  }
+
+  @media only screen and (max-width: 920px) {
+    .box {
+      margin: 4.5vh 4.5vw;
+    }
+  }
+  

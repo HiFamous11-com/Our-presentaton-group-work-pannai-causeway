@@ -1,0 +1,180 @@
+html {
+  scroll-behavior: smooth;
+  scrollbar-color: red black;
+  cursor: rgb(131, 255, 59);
+}
+
+h1{
+    font-size: 2.50rem;
+    color: antiquewhite;
+    text-align: center;
+}
+
+h2{
+    font-size: 1.75rem;
+    color: antiquewhite;
+}
+
+h2:hover {
+  color: rgb(0, 225, 255);
+}
+
+h3{
+  font-size: 1.25rem;
+  color: antiquewhite;
+}
+
+h4{
+  font-size: 1.10rem;
+  color: antiquewhite;
+}
+
+table {
+    font-size: 1.50rem;
+    color: antiquewhite;
+    background-image: none);
+    position: relative;
+    border-color: aquamarine;
+    border-style: groove;
+    margin: 4vh 4vw;
+}
+
+table:hover {
+    color: aquamarine;
+    margin: 5vh 5vw;
+}
+table:hover {
+    animation-name: fade;
+    animation-duration: 5s;
+    transition: 300ms all ease-in-out;
+  }
+  
+  @keyframes fade {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  table:hover::after {
+    animation-name: fade;
+    animation-duration: 5s;
+    transition: 300ms all ease-in-out;
+  }
+  
+  @keyframes fade {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  }
+
+  p {
+    color: antiquewhite;
+    font-weight: 100;
+    font-size: 1.0rem;
+  }
+  
+  p:hover {
+    color: rgb(133, 247, 255);
+  }
+
+  li {
+    color: antiquewhite;
+    margin: 4vh 4vw;
+  }
+
+  li:hover {
+    color: aqua;
+  }
+
+  a {
+    color: antiquewhite;
+    text-decoration: none;
+  }
+
+a:hover {
+  color: rgb(95, 255, 188);
+  text-decoration: none;
+}
+
+body {
+  background-image: url("blob-scene-haikei.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+button {
+  background-color: darkblue;
+  color: antiquewhite;
+  padding: 15px 32px;
+  text-align: center;
+  transition: 300ms all ease-in-out;
+  font-size: 15px;
+  border-radius: 8px;
+  border-color: antiquewhite;
+  border-style: groove;
+}
+
+button:hover {
+  background-color: rgb(1, 0, 59);
+  color: rgb(0, 217, 255);
+  transition: 300ms all ease-in-out;
+  border-color: chartreuse;
+}
+
+button:hover::after {
+  transition: 300ms all ease-in-out;
+}
+
+@media only screen and (max-width: 920px) {
+  table {
+    display: none;
+  }
+}
+
+.button {
+  background-color: darkblue;
+  color: antiquewhite;
+  padding: 15px 32px;
+  text-align: center;
+  transition: 300ms all ease-in-out;
+  font-size: 15px;
+  border-radius: 8px;
+  border-color: antiquewhite;
+  border-style: groove;
+}
+
+.button:hover {
+  background-color: rgb(1, 0, 59);
+  color: rgb(0, 217, 255);
+  transition: 200ms all ease-in-out;
+  border-color: chartreuse;
+}
+
+.button:hover::after {
+  transition: 300ms all ease-in-out;
+}
+
+.button-shadow:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.button-group {
+  float: left;
+  border: 1px solid green;
+}
+
+.button-vertical-group {
+  display: block;
+}
