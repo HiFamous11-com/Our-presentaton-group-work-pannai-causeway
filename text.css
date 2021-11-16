@@ -132,24 +132,103 @@ button:hover::after {
   transition: 300ms all ease-in-out;
 }
 
-@media only screen and (max-width: 920px) {
+@media only screen and (max-width: 920px) and (orientation: portrait) {
   table {
     display: none;
   }
+
+  li {
+    display: none;
+  }
+
+  .button {
+    padding: 10px 22px;
+  }
+
   .button-nav {
-    padding: 0.3px 15px;
+    padding: 5px 22px;
+    display: none;
+  }
+  .button-nav-center {
+    padding: 5px 22px;
+    display: none;
+  }
+  body {
+    background-image: url("layer.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
+
+.p-display {
+  text-align: left;
+}
+
+@media only screen and (min-width: 920px) {
+  table {
+    display: none;
+  }
+
+  .button-nav-center {
+    padding: 5px 22px;
+    display: none;
+  }
+
+  .p-display {
+    display: none;
+  }
+
+.button-nav-mobile {
+  display: none;
+}
+
+  body {
+    background-image: url("blob-scene-haikei.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
 .button-nav {
   background-color: darkblue;
   color: antiquewhite;
-  padding: 0.5px 15px;
+  padding: 15px 32px;
   text-align: center;
   transition: 300ms all ease-in-out;
-  font-size: 10px;
+  font-size: 20px;
   border-radius: 8px;
   border-color: antiquewhite;
   border-style: groove;
+  margin: 4vh 4vw;
+  margin-top: 2vh 2vw;
+}
+
+.button-nav-mobile {
+  background-color: darkblue;
+  color: antiquewhite;
+  padding: 10px 22px;
+  text-align: center;
+  transition: 300ms all ease-in-out;
+  font-size: 15px;
+  border-radius: 8px;
+  border-color: antiquewhite;
+  border-style: groove;
+  margin: 4vh 4vw;
+  margin-top: 2vh 2vw;
+}
+
+.button-nav-center {
+  background-color: darkblue;
+  color: antiquewhite;
+  padding: 15px 32px;
+  text-align: center;
+  transition: 300ms all ease-in-out;
+  font-size: 20px;
+  border-radius: 8px;
+  border-color: antiquewhite;
+  border-style: groove;
+  margin: 4vh 4vw;
+  margin-top: 2vh 2vw;
 }
 
 .button {
@@ -191,4 +270,40 @@ button:hover::after {
 
 .button-vertical-group {
   display: block;
+}
+
+@media only screen and (max-width: 920px) and (orientation: landscape){
+  table {
+    display: none;
+  }
+  .button-nav {
+    padding: 5px 22px;
+    display: none;
+  }
+  .button-nav-mobile {
+    display: none;
+  }
+  .button-nav-center {
+    padding: 5px 22px;
+  }
+  body {
+    background-image: url("symbol.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.img-good {
+  animation-name: fade;
+  animation-duration: 5s;
+  transition: 300ms all ease-in-out;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
